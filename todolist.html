@@ -5,9 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>to do list</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
 </head>
 <body>
-    <h1>투두리스트</h1>
-    <form class="" action="index.html" method="post"></form>
+    <div class="wrap">
+        <h1>to do list</h1>
+        <div class="input_section">
+            <form class="todo-form">
+                <div>
+                    <input type="text" placeholder="할일을 입력하세요." class="input-box">
+                </div>
+                <div>
+                    <button type="button" class="btn-input" onclick="myFunction()">입력</button>
+                </div>
+            </form>   
+        </div>
+
+        <div class="todo-list">
+            <ul></ul>
+        </div>
+    
+    </div>
 </body>
 </html>
