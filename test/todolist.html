@@ -4,22 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>투두리스트</title>
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" 
-      rel="stylesheet">
     <link rel="stylesheet" href="/test/css/style.css">
     <script src="/test/js/main.js" defer></script>
 </head>
 
 <body>
-    <div id="myDIV" class="header">
-        <h2>To Do List</h2>
-        <input type="text" id="myInput" placeholder="할 일을 입력해주세요.">
-        <span onclick="newElement()" class="addBtn">입력</span>
-      </div>
-      
-      <ul id="myUL">
-        <li>근력운동</li>
-        <li>유산소운동</li>
-      </ul>
+  <div class="main">
+    <h1>투두리스트</h1>
+    <form action="todolist.html" class="" method="post">
+      <input type="text" placeholder="할 일을 입력하세요." name=""todo>
+      <button type="submit">입력</button>
+    </form>
+
+    <div class="todolist">
+      <ul></ul>
+      <a id="clear">모두 삭제</a>
+    </div>
+  </div>   
 </body>
