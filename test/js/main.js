@@ -11,14 +11,14 @@ for (i = 0; i < taskList.length; i++) {
   taskList[i].appendChild(span); // taskList에 span 넣기
 }
 
-// 삭제아이콘 누르면 목록 삭제(숨기기)
-let close = document.getElementsByClassName("close"); //close라는 클래스명을 가진 요소를 close로 저장
-let i;
-for (i = 0; i < close.length; i++) {
-    close[i].onclick = function() { // close를 클릭하면 함수실행
-        let div = this.parentElement; // close의 부모요소 li를 div로 저장
-        div.style.display = "none"; // 숨긴다
-    }
-}
+// // 삭제아이콘 누르면 목록 삭제(숨기기)
+// let close = document.getElementsByClassName("close"); //close라는 클래스명을 가진 요소를 close로 저장
+// let i;
+// for (i = 0; i < close.length; i++) {
+//     close[i].onclick = function() { // close를 클릭하면 함수실행
+//         let div = this.parentElement; // close의 부모요소 li를 div로 저장
+//         div.style.display = "none"; // 숨긴다
+//     }
+// }
 
 
