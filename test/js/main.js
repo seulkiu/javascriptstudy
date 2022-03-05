@@ -1,4 +1,7 @@
 
+// 1. 인풋박스에 텍스트 적고 입력버튼 누리면 할일 리스트 추가
+// 2. 할일 삭제
+
 
 // // 삭제 아이콘 생성
 // let taskList = document.getElementsByTagName("LI");
@@ -27,12 +30,12 @@ function addToDo(e){
   toDoValue.value = ''; // 입력창 비워준다
 }
 
-function addTask(value){
+function addTask(value){ //할일 추가
   let ul = document.querySelector('ul');
   let li = document.createElement('li');
-  li.innerHTML = `<input type="checkbox"><label>${value}</label><span class="delet">x</span>`;
-  ul.appendChild(li);
-  document.querySelector('.todolist').style.dispaly = "block";
+  li.innerHTML = `<input type="checkbox"><label>${value}</label><span class="delet">x</span>`; //li에 체크박스와 x넣기
+  ul.appendChild(li); //ul에 li 넣기
+  document.querySelector('.todolist').style.dispaly = "block"; // todolist block설정 (보이기)
 }
 
 function deleteOrCheck(e){
