@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Default Function parameter</title>
+</head>
+<body>
+    <script>
+        // function say(message){
+        //     if(message != undefined) { // 파라미터에 값이 전달되었는지 확인
+        //         console.log(message);
+        //     } else {
+        //         console.log("파라미터가 넘어오지 않았어요.");
+        //     }
+        // }
+
+        // say();
+
+        function say(message="파라미터가 넘어오지 않았어요") { // 기본값이 파라미터에 선언되어 있어서 함수를 호출할 때 파라미터 값을 전달하지 않아도 사용할 수 있음
+            console.log(message); // 파라미터 값이 전달되지 않으면, 기본값인 "파라미터가 넘어오지 않았어요"를 출력하게 됨
+        }
+
+        say();
+
+
+    </script>
+</body>
+</html>

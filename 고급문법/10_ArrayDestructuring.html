@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Distructuring</title>
+</head>
+<body>
+    <script>
+        // function getScores(){
+        //     return [70, 80, 90];
+        // }
+
+        // let scores = getScores();
+
+        // let x = scores[0], //배열의 인덱스 번호로 데이터에 접근
+        // y = scores[1],
+        // z = scores[2];
+
+        // //선언 변수가 배열 문법처럼 보이지만, 배열이 아님. 배열 리턴 값을 순서대로 받기 위한 용도
+        // let [x, y, z] = getScores();
+
+        // console.log(x);
+
+        //     let coordinate = getCoordinates(); //getCoordinates()함수는 위도, 경도 정보를 제공하는 외부 라이브러리라고 가정
+        //     console.log(coordinate[0]); //경도
+        //     console.log(coordinate[1]); //위도
+
+        //     let[longitude, latitude] = getCoordinates(); //getCoordinates()함수는 위도, 경도 정보를 제공하는 외부 라이브러리라고 가정
+        //     console.log(longitude); //경도
+        //     console.log(latitude); //위도
+
+        //     let [x, y, ...args] = getScores(); //x,y는 변수로 할당. 나머지는 args라는 배열에 할당
+        //     console.log(x); //70
+        //     console.log(y) //80
+        //     console.log(args); //[90, 100]
+
+            //배열안에 배열이 있는 경우도 분해할 수 있다
+            function getProfile(){
+                return [
+                    'John',
+                    'Doe',
+                    ['Red', 'Green', 'Blue']
+                ];
+            }
+
+            let [
+                firstName,
+                lastName,
+                [
+                    color1,
+                    color2,
+                    color3
+                ]
+            ] = getProfile();
+
+            console.log(color1, color2, color3); //Red Green Blue
+    </script>
+</body>
+</html>

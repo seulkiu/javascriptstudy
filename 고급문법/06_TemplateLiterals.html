@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template Literals</title>
+</head>
+<body>
+    <script>
+        function hello2(name) {
+            console.log("Hello" + name + ". Welcome!") // 문자열은 +기호로 합침
+        }
+        hello2("Jeremy");
+
+        function hello2(name) {
+            let name2 = "John";
+            console.log(`Hello ${name2}. Welcome! ${name}`);
+        }
+        hello2("Jeremy");
+    </script>
+</body>
+</html>

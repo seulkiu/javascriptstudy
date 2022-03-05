@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Literal Syntax Extension</title>
+</head>
+<body>
+    <script>
+        let firstName = "John";
+        let lastName = "Doe";
+
+        let person = {
+            firstName : firstName,
+            lastName : lastName
+        };
+
+
+
+        let type = "student";
+        
+        let score = {
+            [type]: "John", //변수명에 할당된 값을 Object의 키로 사용
+            score: 95
+        };
+    </script>
+</body>
+</html>

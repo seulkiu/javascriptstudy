@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Function</title>
+</head>
+<body>
+    <script>
+        // 함수 선언식
+        function hello(name){
+            return "Hello" + name;
+        }
+        // 함수 표현식
+        const hello2 = function (name) {
+            return "Hello" + name;
+        };
+
+        //위의 일반적인 함수 표현은 아래 화살표 함수로 쓸 수 있다
+        const hello3 = (name) => {return "Hello" + name};
+
+        //파라미터가 하나만 있을 때는 주변 괄호를 생략할 수 있다.
+        const hello3 = name => {return "Hello" + name};
+
+        //화살표 함수의 유일한 문장이 'return'일때 'return'과
+        //중괄호{}를 생략할 수 있다.
+        const hello4 = name => "Hello" + fullName;
+    </script>
+</body>
+</html>
