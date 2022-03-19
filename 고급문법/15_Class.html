@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class</title>
+</head>
+
+<body>
+    <script>
+        // class 클래스명 {
+        //     constructor(매개변수) {
+        //         //  class로 생성된 객체를 생성하고 초기화하기 위한 특수 함수
+        //     }
+        // }
+
+        // class Car {
+        //     constructor(modelName, modelYear, type, price){
+        //         this.modelName = modelName;
+        //         this.modelYear = modelYear;
+        //         this.type = type;
+        //         this.price = price;
+        //     }
+        // }
+
+        // let ionic = new Car("아이오닉", "2021", "e", 4000); //아이오닉 차량 생성
+        // let genesis = new Car("제네시스", "2021", "g", 7000); //제네시스 차량 생성
+
+
+        class Car {
+            constructor(modelName, modelYear, type, price) {
+                this.modelName = modelName;
+                this.modelYear = modelYear;
+                this.type = type;
+                this.price = price;
+            }
+
+
+            getModelName() {
+                return this.modelName;
+            }
+
+            getModelYear() {
+                return this.modelYear;
+            }
+
+            getType() {
+                return this.type;
+            }
+
+            getPrice() {
+                return this.price;
+            }
+
+            setModelName(modelName) {
+                this.modelName = modelName;
+            }
+
+            setModelYear(modelYear) {
+                this.modelYear = modelYear;
+            }
+
+            setType(tyep) {
+                this.type = type;
+            }
+
+            setPrice(price) {
+                this.price;
+            }
+        }
+
+        let ionic = new Car("아이오닉", "2021", "e", 4000); //아이오닉 차량 생성
+        let medelName = ionic.getModelName(); //차량 모델명 가져오기
+        ionic.setPrice(4300); // 차량 가격 변경
+
+        class ElectricCar extends Car {
+            constructor(modelName, modelYear, price, chargeTime) {
+                super(modelName, modelYear, "e", price);
+                this.chargeTime = chargeTime;
+            }
+
+            setChargeTime(time) {
+                this.chargeTime = time;
+            }
+
+            getChargeTime(){
+                return this.chargeTime;
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modules</title>
+</head>
+<body>
+    <script type="module">
+    import {log} from "/script/log.js"; //log.js 파일에서 export로 지정된 함수 중 log 함수만 import함
+    log("log로 메세지 출력"); //log 함수 사용가능       
+    </script>
+</body>
+</html>
