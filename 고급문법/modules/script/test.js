@@ -75,7 +75,7 @@ let boyfriend1 = new 사람("차은우", "24", "남", "피자", "불닭볶음면
 let boyfriend2 = new 사람("로운", "25", "남", "아이스크림", "시금치");
 
 
-class add extends 사람 {
+class Student extends 사람 {
     constructor(name, age, gender, favoritefood, dislikefood, birthday, job) {
         super(name, age, gender, favoritefood, dislikefood);
         this.birthday = birthday;
@@ -100,5 +100,3 @@ myJob(){
     console.log(`제 직업은 ${this.job} 입니다. 돈 버는 게 쉽지 않네요...`);
 }
 }
-
-let

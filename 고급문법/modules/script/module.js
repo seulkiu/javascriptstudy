@@ -1,12 +1,4 @@
-export function powerOn(){
-    message : "Power On";
-}
-
-export function powerOff(){
-    message : "Power Off";
-}
-
-export class apple{
+export class Electronics{
     constructor(modelName, price, purpose) {
         this.modelName = modelName;
         this.price = price;
@@ -14,5 +6,8 @@ export class apple{
     }
     getModelName(){
         return this.modelName;
+    }
+    powerOn(){
+        console.log("Power On")
     }
 }
