@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML DOM</title>
+</head>
+<body>
+    <!-- <input type="text" id="userid">
+    <p>태그명을 사용해서 HTML 요소를 찾습니다. documnet.getElementById</p>
+    <script>
+        let element = document.getElementById("userid")
+    </script> -->
+
+    <!-- <P>HTML 요소에 대한 접근</P>
+    <p>태그명을 사용해서 HTML 요소를 찾습니다. documnet.getElementById</p>
+    <script>
+        let element = document.getElementsByTagName("p");
+    </script> -->
+
+    <!-- <p class="para">HTML 요소에 대한 접근</p>
+    <p class="para">
+        클래스명을 사용해서 HTML 요소를 찾습니다. documnet.getElementsByClassName
+    </p>
+    <script>
+        let element = document.getElementsByClassName("para")
+    </script> -->
+
+    <!-- HTML
+    <div class="bg-red h-100"></div> -->
+
+    <!-- HTML -->
+    <!-- <div id="container"></div> -->
+    <!-- <a href="/link">링크</a>
+    <input type="text"> -->
+
+    <button onclick="doSave(event)">저장</button>
+    <script>
+        function doSave(e) {
+            let obj = e.target;
+            obj.disable = true; // 사용자가 중복해서 버튼을 또 클릭하지 못하도록 버튼은 disable 시킴
+
+            //저장을 실행하는 코드 작성
+            setTimeout(function (){
+                //저장 완료까지 2초가 소요된 것으로 가정. 2초 후 버튼을 다시 enable
+                obj.disable = false;
+            }, 2000);
+        }
+    </script>
+</body>
+</html>
