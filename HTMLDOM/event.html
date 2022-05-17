@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Event</title>
+</head>
+<body>
+    <!-- <button onclick="myFunction();">클릭</button>
+    <button id="btn">클릭</button>
+    <button id="btn2">클릭</button>
+
+    <script>
+        function myFunction(){
+            console.log("onclick 이벤트 설정");
+        }
+        function myFunction(){
+            console.log("이벤트 리스너 사용")
+        }
+
+        document.getElementById("btn").addEventListener("click", myFunction);
+        document.getElementById("btn2").addEventListener("click", function(){
+            console.log("이벤트 함수 실행");
+        }); 
+    </script> -->
+<!-- 
+        <select id="select1" onchange="doChange();">
+            <option value="KO">Korea</option>
+            <option value="CN">China</option>
+            <option value="JP">Japan</option>
+        </select>
+
+        <script>
+            function doChange(){
+                let selectedValue = document.getElementById("select1").value;
+                console.log(selectedValue);
+            }
+        </script> -->
+
+        <!-- <input type="text" id="text1" onfocus="doFocus();" />
+        <script>
+            function doFocus() {
+                console.log("doFocus");
+            }
+        </script> -->
+<!-- 
+        <input type="text" id="text1" onblur="doBlur(this);" />
+        <script>
+            function doBlur(obj) {
+                if (obj.value == "") {
+                    alert("필수값입니다. 반ㄷ시 입력하세요.");
+                }
+                console.log(obj.value);
+            }
+        </script> -->
+
+        <!-- <input type="text" onkeypress="myFunction(event);"
+        onkeydown="myFunction(event);"
+        onkeyup="myFunction(event);"
+        />
+
+        <script>
+            function myFunction(e) {
+                console.log(e.type); // 이벤트 이름 출력
+                console.log(e.target); // 이벤트를 발생시킨 DOM Element(요소)
+                console.log(e.target.value); // 이벤트가 일어나는 시점에 입력된 값이 어떻게 변하는지 출력
+            }
+        </script> -->
+
+        <div style="height: 100px; overflow-y: auto" onscroll="myFunction(event);">
+            <p>Paragraph</p>
+            <p>Paragraph</p>
+            <p>Paragraph</p>
+            <p>Paragraph</p>
+            <p>Paragraph</p>
+            <p>Paragraph</p>
+            <p>Paragraph</p>
+            <p>Paragraph</p>
+        </div>
+        <script>
+            function myFunction(e) {
+                console.log(e);
+            }
+        </script>
+</body>
+</html>
