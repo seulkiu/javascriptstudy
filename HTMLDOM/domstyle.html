@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM style</title>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    Text:
+    <br>
+    <input type="text" id="text1" onblur="changeBorder();">
+    <br>
+    Radio(이메일 수산):
+    <br>
+    <label>
+        <input type="radio" name="radio_email_yn" value="Y" onclick="showEmail();">
+        동의
+    </label>
+    <label>
+        <input type="radio" name="radio_email_yn" value="N" onclick="hideEmail();" checked>
+        거부
+    </label>
+    <div id="divEmail" style="display: none;">
+        이메일
+        <input type="text" id="email">
+    </div>
+    <br>
+    Select
+    <br>
+    <select id="select1" onchange="doChange(this);">
+        <option value=""></option>
+        <option value="KO">Korea</option>
+        <option value="CN">China</option>
+        <option value="JP">Japan</option>
+    </select>
+</body>
+
+</html>
