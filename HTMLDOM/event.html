@@ -1,12 +1,32 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DOM Event</title>
+    <style>
+
+    </style>
 </head>
+
 <body>
+    Text:
+    <br />
+    <input type="text" id="text1" onblur="changeBorder();" />
+    <br />
+    Radio(이메일 수신):
+    <br />
+    <label>
+        <input type="radio" name="radio_email_yn" value="Y" onclick="showEmail();" />
+        동의
+    </label>
+    <label>
+        <input type="radio" name="radio_email_yn" value="N" onclick="hideEmail();" checked>
+        거부
+    </label>
+
     <!-- <button onclick="myFunction();">클릭</button>
     <button id="btn">클릭</button>
     <button id="btn2">클릭</button>
@@ -24,7 +44,7 @@
             console.log("이벤트 함수 실행");
         }); 
     </script> -->
-<!-- 
+    <!-- 
         <select id="select1" onchange="doChange();">
             <option value="KO">Korea</option>
             <option value="CN">China</option>
@@ -38,13 +58,13 @@
             }
         </script> -->
 
-        <!-- <input type="text" id="text1" onfocus="doFocus();" />
+    <!-- <input type="text" id="text1" onfocus="doFocus();" />
         <script>
             function doFocus() {
                 console.log("doFocus");
             }
         </script> -->
-<!-- 
+    <!-- 
         <input type="text" id="text1" onblur="doBlur(this);" />
         <script>
             function doBlur(obj) {
@@ -55,7 +75,7 @@
             }
         </script> -->
 
-        <!-- <input type="text" onkeypress="myFunction(event);"
+    <!-- <input type="text" onkeypress="myFunction(event);"
         onkeydown="myFunction(event);"
         onkeyup="myFunction(event);"
         />
@@ -67,7 +87,7 @@
                 console.log(e.target.value); // 이벤트가 일어나는 시점에 입력된 값이 어떻게 변하는지 출력
             }
         </script> -->
-
+    <!-- 
         <div style="height: 100px; overflow-y: auto" onscroll="myFunction(event);">
             <p>Paragraph</p>
             <p>Paragraph</p>
@@ -82,6 +102,7 @@
             function myFunction(e) {
                 console.log(e);
             }
-        </script>
+        </script> -->
 </body>
+
 </html>
